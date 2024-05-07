@@ -15,7 +15,6 @@ header {
 }
 header .header-content {
     display: flex;
-    border: 3px solid red;
     flex-direction: column;
     align-items: center;
     justify-content: center;
