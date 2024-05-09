@@ -1,5 +1,5 @@
 :root {
-    --black1: rgba(33, 32, 30, 0.623);
+    --black1: rgba(33, 32, 30);
     --black2: rgb(0,0,0);
     --white1: rgb(243,243,243);
     --gold: rgb(166,114,69)
@@ -14,7 +14,7 @@
 }
 
 header {
-    color: rgb(243, 243, 243);
+    color: var(--white1);
     position: relative;
     min-height: 100vh;
     background: url(./img/img\ couverture.jpg) fixed center/cover;
@@ -24,7 +24,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     background: var(--black1);
-    color: rgb(243, 243, 243);
+    color: var(--white1);
     width: 100%;
     height: 65px;
     z-index: 100;
@@ -157,4 +157,46 @@ article {
 .second-article {
     display: grid;
     grid-template-columns: 60% 40%;
+}
+
+#section2 {
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center; */
+    border: 3px solid green;
+    background-color: var(--black1);
+}
+#section2 h1{
+    text-align: center;
+    color: var(--white1);
+    font-size: 3.5rem;
+}
+
+#section2  img {
+    height: 400px;
+    width: 320px;
+}
+.img-container {
+    border: 2px solid orange;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 60px auto;
+}
+.card:hover{
+    cursor: pointer;
+    
+}
+.row1-img{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border:  3px dotted red;
+    margin-bottom: 50px;
+}
+.row2-img{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
