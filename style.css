@@ -200,3 +200,60 @@ article {
     flex-wrap: wrap;
     margin-top: 50px;
 }
+
+#section3 h1{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 25px 0;
+}
+#section3 .logement-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    margin: 0 auto;
+}
+#section3 .img-logement{
+    background: url(./img/Hébergments/Bulle01.jpg) center/cover;
+    min-height: 350px;
+}
+#section3 .img-logement:nth-child(3) {
+    background: url(./img/Hébergments/cabane\ perchée01.jpg) center/cover;
+    min-height: 350px;
+}
+#section3 .img-logement:nth-child(6){
+    background: url(./img/Hébergments/Delta01.jpg) center/cover;
+    min-height: 350px;
+}
+#section3 .img-logement:nth-child(7){
+    background: url(./img/Hébergments/logis01.jpg) center/cover;
+    min-height: 350px;
+}
+
+#section3 .text-logement h4{
+    /* font-family: ; */
+    text-align: center;
+    background-color: var(--black2);
+    color: var(--white1);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding: 15px 0;
+}
+#section3 .text-logement p{
+    /* font-family: serif; */
+    padding: 15px 0;
+}
+#section3 .text-logement a {
+    text-align: center;
+}
+#section3 .text-logement button {
+    text-transform: uppercase;
+    border: none;
+    padding: 20px;
+    background-color: var(--gold);
+    color: var(--white1);
+    border-radius: 50px;
+}
+#section3 .text-logement button:hover{
+    cursor: pointer;
+    background-color: rgb(194, 128, 69);
+}
