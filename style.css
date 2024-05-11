@@ -271,13 +271,45 @@ article {
     font-size: 3.5rem;
     padding: 25px 0;
     color: var(--white1);
-    
+    background: var(--black2);
 }
-.background-container{
+#section4 .background-container{
     background: url(./img/kayak\ extrême.jpg) fixed;
     background-position: center;
     background-repeat: no-repeat;
     min-height:85% ;
     width: 65%;
     margin: 0 auto;
+    position: relative;
+}
+
+#section4 .card-comment {
+    background: var(--white1);
+    padding: 20px;
+    border: 1px solid var(--black2);
+    max-width: 500px;
+    
+}
+#section4 #card1-comment{
+    position: absolute;
+    left: -10%;
+    top: 5%;
+    z-index: 2;
+}
+#section4 #card1-comment:before{
+    position: absolute;
+    z-index: 3;
+    background:url(./img/photo01.jpg\ copy.jpg);
+}
+#section4 #card2-comment{
+    position: absolute;
+    right: -5%;
+    top: 20%;
+}
+
+
+#section4 #card3-comment{
+    position: absolute;
+    left: 10%;
+    top: 30%;
 }
