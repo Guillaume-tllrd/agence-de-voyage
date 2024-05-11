@@ -170,6 +170,7 @@ article {
     text-align: center;
     color: var(--white1);
     font-size: 3.5rem;
+    padding: 25px 0;
 }
 
 #section2  img {
@@ -181,7 +182,7 @@ article {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 60px auto;
+    margin: 0px auto 115px;
 }
 .card:hover{
     cursor: pointer;
@@ -198,9 +199,12 @@ article {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    border:  3px dotted red;
     margin-top: 50px;
 }
-
+#section3 {
+    padding-bottom: 115px;
+}
 #section3 h1{
     text-align: center;
     font-size: 3.5rem;
@@ -211,6 +215,7 @@ article {
     grid-template-columns: 50% 50%;
     width: 80%;
     margin: 0 auto;
+    border: 2px dashed var(--black1);
 }
 #section3 .img-logement{
     background: url(./img/Hébergments/Bulle01.jpg) center/cover;
@@ -256,4 +261,23 @@ article {
 #section3 .text-logement button:hover{
     cursor: pointer;
     background-color: rgb(194, 128, 69);
+}
+#section4{
+    background-color: var(--black1);
+    height: 100vh;
+}
+#section4 h1{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 25px 0;
+    color: var(--white1);
+    
+}
+.background-container{
+    background: url(./img/kayak\ extrême.jpg) fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:85% ;
+    width: 65%;
+    margin: 0 auto;
 }
