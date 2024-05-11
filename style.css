@@ -264,7 +264,7 @@ article {
 }
 #section4{
     background-color: var(--black1);
-    height: 100vh;
+    min-height: 900px;
 }
 #section4 h1{
     text-align: center;
@@ -277,7 +277,7 @@ article {
     background: url(./img/kayak\ extrême.jpg) fixed;
     background-position: center;
     background-repeat: no-repeat;
-    min-height:85% ;
+    height: 800px;
     width: 65%;
     margin: 0 auto;
     position: relative;
@@ -288,11 +288,18 @@ article {
     padding: 20px;
     border: 1px solid var(--black2);
     max-width: 500px;
-    
 }
+#section4 .card-comment p {
+    text-align: justify;
+}
+#section4 .card-comment h6 {
+    text-align: start;
+    color: var(--gold);
+}
+
 #section4 #card1-comment{
     position: absolute;
-    left: -10%;
+    left: 0%;
     top: 5%;
     z-index: 2;
 }
@@ -303,13 +310,25 @@ article {
 }
 #section4 #card2-comment{
     position: absolute;
-    right: -5%;
-    top: 20%;
+    right: 0%;
+    top: 25%;
 }
 
 
 #section4 #card3-comment{
     position: absolute;
-    left: 10%;
-    top: 30%;
+    left: 0%;
+    top: 45%;
+}
+
+#section4 #card4-comment{
+    position: absolute;
+    right: 0%;
+    top: 65%;
+}
+
+#section4 #card5-comment{
+    position: absolute;
+    left: 0%;
+    top: 85%;
 }
