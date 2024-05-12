@@ -332,3 +332,30 @@ article {
     left: 0%;
     top: 85%;
 }
+
+
+#section5 .form-container{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+#section5 .booking-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+.booking-form-container{
+    text-align: center;
+}
+
+#section5 form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#select-sport{
+    width: 100%;
+}
