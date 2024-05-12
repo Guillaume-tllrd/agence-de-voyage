@@ -352,10 +352,15 @@ article {
 }
 
 #section5 form {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
 }
-#select-sport{
-    width: 100%;
+#section5 #personne, #booking-date, #booking-time, #name, #phone, #email {
+    width: 32.5%;
+    border: none;
+    border-bottom: solid 1px var(--black2);
+}
+#section5 #btn-form{
+    width: 33%;
+    align-content: center;
 }
