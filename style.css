@@ -15,7 +15,7 @@
 
 header {
     color: var(--white1);
-    position: relative;
+    /* position: relative; */
     min-height: 100vh;
     background: url(./img/img\ couverture.jpg) fixed center/cover;
 }
@@ -72,10 +72,11 @@ header nav .nav-right {
 }
 header nav .nav-right li {
     transition: 0.15s;
-    cursor: pointer;
+    
   }
 header nav .nav-right li:hover {
     transform: scale(1.08);
+    cursor: pointer;
 }
 header .header-content {
     display: flex;
@@ -160,12 +161,11 @@ article {
 }
 
 #section2 {
-    /* display: flex;
-    flex-direction: column; */
-    /* align-items: center; */
-    border: 3px solid green;
+    /* border: 3px solid green; */
     background-color: var(--black1);
+    padding-bottom: 100px;
 }
+
 #section2 h1{
     text-align: center;
     color: var(--white1);
@@ -173,35 +173,83 @@ article {
     padding: 25px 0;
 }
 
-#section2  img {
-    height: 400px;
-    width: 320px;
-}
 .img-container {
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0px auto 115px;
-}
-.card:hover{
-    cursor: pointer;
-    
+    align-items: center;
+    /* margin-bottom: 100px; */
 }
 .row1-img{
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    border:  3px dotted red;
-    margin-bottom: 50px;
+    /* border:  3px dotted red; */
+    gap: 50px;
+    margin: 0 auto 50px;
+    /* min-width: 60%; */
+    /* max-width: 1200px; */
+    
+    /* margin-bottom: 50px; */
 }
 .row2-img{
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    border:  3px dotted red;
-    margin-top: 50px;
+    /* border:  3px dotted red; */
+    gap: 50px;
+    margin: 0 auto;
 }
+#section2 .card{
+    height: 400px;
+    width: 320px;
+}
+#section2 #base-jump {
+    background-image: url(./img/base\ jump\ pack.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
+#section2 #parapente {
+    background-image: url(./img/Parapente02.jpg);
+    background-size: cover;
+}
+#section2 #saut-elastique {
+    background-image: url(./img/saut\ élastique.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+#section2 #rafting {
+    background-image: url(./img/rafting\ family.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
+#section2 #escalade {
+    background-image: url(./img/escalade.jpg);
+    background-size: cover;
+    background-position: 80%;
+}
+#section2 #vtt {
+    background-image: url(./img/vtt\ descente.jpg);
+    background-size: cover;
+    background-position: 80%;
+}
+#section2 .info{
+    height: 400px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white1);
+    position: relative;
+    background-color: #000000b9;
+    opacity: 0;
+}
+
+#section2 .info:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
 #section3 {
     padding-bottom: 115px;
 }
@@ -209,6 +257,15 @@ article {
     text-align: center;
     font-size: 3.5rem;
     padding: 25px 0;
+    position: relative;
+}
+#section3 h1::before{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 20px;
+    left: 50%;
+    color: var(--white1);
 }
 #section3 .logement-container {
     display: grid;
@@ -234,7 +291,7 @@ article {
     min-height: 350px;
 }
 
-#section3 .text-logement h4{
+#section3  h4{
     /* font-family: ; */
     text-align: center;
     background-color: var(--black2);
@@ -245,10 +302,10 @@ article {
 }
 #section3 .text-logement p{
     /* font-family: serif; */
-    padding: 15px 0;
+    padding: 15px 15px;
 }
 #section3 .text-logement a {
-    text-align: center;
+    justify-content: end;
 }
 #section3 .text-logement button {
     text-transform: uppercase;
@@ -335,32 +392,117 @@ article {
 
 
 #section5 .form-container{
-    display: grid;
-    grid-template-columns: 35% 65%;
-    max-width: 1050px;
-    margin: 0 auto;
+    
+    /* border: 2px solid green; */
 }
 
 #section5 .booking-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    padding: 30px 0;
+    background-color: var(--white1);
 }
 .booking-form-container{
     text-align: center;
 }
-
+.booking-form-container h2 {
+    color: var(--black2);
+    padding-bottom: 15px;
+    /* font-family: ; */
+}
+.booking-form-container h3 {
+    color: var(--gold);
+    /* font-family: ; */
+}
 #section5 form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+.first-row-form {
+    padding-bottom: 30px;
+}
+.second-row-form{
+    padding-bottom: 30px;
 }
 #section5 #personne, #booking-date, #booking-time, #name, #phone, #email {
     width: 32.5%;
     border: none;
-    border-bottom: solid 1px var(--black2);
+    border-bottom: solid 1px var(--black1);
+    background-color: var(--white1);
+    color: var(--black1);
+    text-align: center;
+}
+#select-sport{
+    width: 100%;
+    background-color: var(--white1);
+    color: var(--black1);
+    text-align: center;
+    border: none;
+    border-bottom: solid 1px var(--black1);
 }
 #section5 #btn-form{
     width: 33%;
-    align-content: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    border: none;
+    padding: 20px;
+    background-color: var(--gold);
+    color: var(--white1);
+    border-radius: 50px;
+}
+#section5 #btn-form:hover{
+    cursor: pointer;
+    background-color: rgb(194, 128, 69);
+}
+footer{
+    background-color: var(--black1);
+    color: var(--white1);
+}
+footer .footer-content {
+    display: flex;
+    /* align-items: center; */
+    
+    flex-wrap: wrap;
+    width: 100%;
+}
+footer .case-footer{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    margin: 50px auto 50px;
+    padding: 0 20px;
+}
+footer .adresse-footer h3 {
+    /* font-family: ; */
+    color: var(--gold);
+}
+footer .horaire-footer{
+    padding: 20px;
+}
+.partenaire-case a {
+    color: var(--white1);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.partenaire-case a:hover{
+    color: var(--gold);
+}
+footer .socialmedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .socialmedia li:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+    color: var(--gold);
+}
+.copyright {
+    text-align: center;
+    color: var(--gold);
+    font-size: 0.6rem;
 }
