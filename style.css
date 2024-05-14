@@ -29,6 +29,10 @@ header nav {
     height: 65px;
     z-index: 100;
   }
+#icons {
+    cursor: pointer;
+    display: none;
+}
 header nav img {
     width: 60%;
     padding-left: 5%;
@@ -99,10 +103,12 @@ header .header-content h1 {
     text-transform: uppercase;
     font-size: 4rem;
     letter-spacing: 4px;
+    ;
 }
 header .header-content p {
     margin: 40px auto 60px;
     font-style: italic;
+    );
 }
 header .header-content span {
     border: 2px solid var(--white1);
@@ -125,16 +131,18 @@ header .header-content span a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     padding: 40px 0;
 }
 .section1-container{
-    width: 80%;
+    max-width: 1200px;
+    border: 3px solid green;
 }
 #section1 h1 {
     /* font-family: ; */
     font-size: 3.5em;
     padding-bottom: 40px;
+
 }
 #section1 h4 {
     font-size: 1.8em;
@@ -147,13 +155,15 @@ article {
     display: grid;
     grid-template-columns: 40% 60%;
 }
-
+.first-article img {
+    width: 100%;
+}
 #section1 h3 {
     font-size: 2.5em;
     /* text-justify: auto; */
 }
-#section1 p {
-    text-justify: auto;
+.text-article1, .text-article2{
+    text-align: justify;
 }
 .second-article {
     display: grid;
