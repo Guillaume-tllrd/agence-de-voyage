@@ -164,6 +164,7 @@ article {
     /* border: 3px solid green; */
     background-color: var(--black1);
     padding-bottom: 100px;
+    position: relative;
 }
 
 #section2 h1{
@@ -171,26 +172,49 @@ article {
     color: var(--white1);
     font-size: 3.5rem;
     padding: 25px 0;
+    position: relative;
+}
+#section2 h1::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    background-color: var(--white1);
+    top: 50%;
+    
+}
+#section2 h1::before{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    background-color: var(--white1);
+    top: 50%;
+    transform: translateX(-100%);
 }
 
 .img-container {
-    /* border: 2px solid orange; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    /* margin-bottom: 100px; */
 }
 .row1-img{
     display: flex;
     flex-wrap: wrap;
-    /* border:  3px dotted red; */
     gap: 50px;
     margin: 0 auto 50px;
-    /* min-width: 60%; */
-    /* max-width: 1200px; */
+    position: relative;
     
-    /* margin-bottom: 50px; */
+}
+.row1-img::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--white1);
+    bottom: -6%;
+    
 }
 .row2-img{
     display: flex;
@@ -198,6 +222,16 @@ article {
     /* border:  3px dotted red; */
     gap: 50px;
     margin: 0 auto;
+    position: relative;
+}
+.row2-img::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    background-color: var(--white1);
+    bottom: -10%;
+    left: 35%;
 }
 #section2 .card{
     height: 400px;
@@ -250,6 +284,115 @@ article {
     cursor: pointer;
 }
 
+/* CARTE SPORT */
+/* ********Base-jump****** */
+#section2 .carte-infos-basejump {
+    position: absolute;
+    max-width: 945px;
+    height: 300px;
+    border: solid 3px var(--gold);
+    border-radius: 15px;
+    background-color: var(--white1);
+    opacity: 0;
+}
+#section2 .carte-infos-basejump figure{
+    display: flex;
+    gap: 10px;
+}
+#section2 .carte-infos-basejump img {
+    height: 200px;
+}
+/* ********Parapente****** */
+#section2 .carte-infos-parapente {
+    position: absolute;
+    max-width: 945px;
+    height: 300px;
+    border: solid 3px var(--gold);
+    border-radius: 15px;
+    background-color: var(--white1);
+    opacity: 0;
+}
+#section2 .carte-infos-parapente figure{
+    display: flex;
+    gap: 10px;
+}
+#section2 .carte-infos-parapente img {
+    height: 200px;
+}
+
+/* ********Saut à l'élastique****** */
+#section2 .carte-infos-saut {
+    position: absolute;
+    max-width: 945px;
+    height: 300px;
+    border: solid 3px var(--gold);
+    border-radius: 15px;
+    background-color: var(--white1);
+    opacity: 0;
+}
+#section2 .carte-infos-saut figure{
+    display: flex;
+    gap: 10px;
+}
+#section2 .carte-infos-saut img {
+    height: 200px;
+}
+
+/* ****************Rafting*************** */
+#section2 .carte-infos-rafting {
+    position: absolute;
+    max-width: 945px;
+    height: 300px;
+    border: solid 3px var(--gold);
+    border-radius: 15px;
+    background-color: var(--white1);
+    opacity: 0;
+}
+#section2 .carte-infos-rafting figure{
+    display: flex;
+    gap: 10px;
+}
+#section2 .carte-infos-rafting img {
+    height: 200px;
+}
+
+/* ***********Escalade************** */
+#section2 .carte-infos-escalade {
+    position: absolute;
+    /* top: 0; */
+    max-width: 945px;
+    height: 300px;
+    border: solid 3px var(--gold);
+    border-radius: 15px;
+    background-color: var(--white1);
+    opacity: 0;
+}
+#section2 .carte-infos-escalade figure{
+    display: flex;
+    gap: 10px;
+}
+#section2 .carte-infos-escalade img {
+    height: 200px;
+}
+
+/* ************VTT*************** */
+#section2 .carte-infos-vtt {
+    position: absolute;
+    max-width: 945px;
+    height: 300px;
+    border: solid 3px var(--gold);
+    border-radius: 15px;
+    background-color: var(--white1);
+    opacity: 0;
+}
+#section2 .carte-infos-vtt figure{
+    display: flex;
+    gap: 10px;
+}
+#section2 .carte-infos-vtt img {
+    height: 200px;
+}
+
 #section3 {
     padding-bottom: 115px;
 }
@@ -270,14 +413,48 @@ article {
 #section3 .logement-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
-    border: 2px dashed var(--black1);
+    border: 1px dashed var(--black1);
 }
-#section3 .img-logement{
-    background: url(./img/Hébergments/Bulle01.jpg) center/cover;
-    min-height: 350px;
+
+.caroussel {
+    position: relative;
+    height: 350px;
 }
+.caroussel button {
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 2.6rem;
+    z-index: 2;
+    cursor: pointer;
+    color: rgb(246, 246, 246);
+    transform: translateY(-50%);
+    top: 50%;
+}
+#prev{
+    left: 5px;
+  }
+#next {
+    right: 5px;
+}
+.slide {
+    position: absolute;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    /* border: 3px solid green; */
+    width: 100%;
+  }
+  .slide.active {
+    opacity: 1;
+  }
+  .slide img{
+    width: 100%;
+    height: 350px;
+
+  }
 #section3 .img-logement:nth-child(3) {
     background: url(./img/Hébergments/cabane\ perchée01.jpg) center/cover;
     min-height: 350px;
@@ -305,9 +482,11 @@ article {
     padding: 15px 15px;
 }
 #section3 .text-logement a {
-    justify-content: end;
+    text-decoration: none;
 }
 #section3 .text-logement button {
+    display: block;
+    margin: 0 auto;
     text-transform: uppercase;
     border: none;
     padding: 20px;
