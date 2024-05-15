@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <title>L'agence adrénaline expédition</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-left">
-                <li><a href="#"><img src="./img/Logo.png" alt="logo adrenaline expédition"></li></a>
-                <li><a href="#">L'agence</li></a>
-                
-            </ul>
+        <nav class="active">
+            <a href="#header"><img src="./img/Logo.png" alt="logo adrenaline expédition"></a>
             <ul class="nav-right">
-                <li><a href="">Pratiques sportives</a></li>
-                <li><a href="">Hébergements</a></li>
-                <li><a href="">Témoignages</a></li>
-                <li><a href="">Réservation</a></li>
+                <li><a href="#section1">L'agence</li></a>
+                <li><a href="#section2">Pratiques sportives</a></li>
+                <li><a href="#section3">Hébergements</a></li>
+                <li><a href="#section4">Témoignages</a></li>
+                <li><a href="#section5">Réservation</a></li>
                 <div class="socialmedia">
                     <li><i class="fa-brands fa-x-twitter"></i></li>
                     <li><i class="fa-brands fa-facebook"></i></li>
@@ -31,7 +29,7 @@
         <div class="header-content">
             <h1>Organisateur <br> de séjours extrêmes</h1>
             <p>"Des aventures inoubliables vous attendent au cœur du Verdon. Êtes-vous prêt à repousser vos limites dans ce sanctuaire de la nature ?"!</p>
-            <span><a href="#main"><i class="fa-solid fa-arrow-down"></i></a></span>
+            <span><a href="#section1"><i class="fa-solid fa-arrow-down"></i></a></span>
         </div>
     </header>
     <main>
@@ -196,29 +194,29 @@
                     <button class="btn-caroussel" id="prev">&#10096;</button>
                     <button class="btn-caroussel" id="next">&#10097;</button>
                     <ul>
-                        <li id="slide" class="slide active">
+                        <li class="slide active">
                             <img src="./img/Hébergments/Bulle01.jpg" alt="img hébergement1">
                         </li>
-                        <li id="slide" class="slide">
+                        <li class="slide">
                             <img src="./img/Hébergments/Bulle02.jpg" alt="img hébergement2">
                         </li>
-                        <li id="slide" class="slide">
+                        <li  class="slide">
                             <img src="./img/Hébergments/Bulle03.jpg" alt="img hébergement 3">
                         </li>
                     </ul>
                 </div>
 
                 <div class="caroussel">
-                    <button class="btn-caroussel" id="prev">&#10096;</button>
-                    <button class="btn-caroussel" id="next">&#10097;</button>
+                    <button class="btn-caroussel2" id="prev2">&#10096;</button>
+                    <button class="btn-caroussel2" id="next2">&#10097;</button>
                     <ul>
-                        <li class="slide active">
+                        <li class="slide2 active2">
                             <img src="./img/Hébergments/cabane perchée01.jpg" alt="img hébergement1">
                         </li>
-                        <li class="slide ">
+                        <li class="slide2">
                             <img src="./img/Hébergments/cabane perchée02.jpg" alt="img hébergement2">
                         </li>
-                        <li class="slide">
+                        <li class="slide2">
                             <img src="./img/Hébergments/cabane perchée03.jpg" alt="img hébergement 3">
                         </li>
                     </ul>
@@ -238,9 +236,37 @@
                     <p>Disponible dtoute l'année.</p>
                     <a href="#"><button>en savoir plus</button></a>
                 </div>
-                <div class="img-logement"></div>
+                <div class="caroussel">
+                    <button class="btn-caroussel3" id="prev3">&#10096;</button>
+                    <button class="btn-caroussel3" id="next3">&#10097;</button>
+                    <ul>
+                        <li class="slide3 active3">
+                            <img src="./img/Hébergments/Delta01.jpg" alt="img hébergement1">
+                        </li>
+                        <li class="slide3">
+                            <img src="./img/Hébergments/Delta02.jpg" alt="img hébergement2">
+                        </li>
+                        <li class="slide3">
+                            <img src="./img/Hébergments/Delta03.jpg" alt="img hébergement 3">
+                        </li>
+                    </ul>
+                </div>
 
-                <div class="img-logement"></div>
+                <div class="caroussel">
+                    <button class="btn-caroussel4" id="prev4">&#10096;</button>
+                    <button class="btn-caroussel4" id="next4">&#10097;</button>
+                    <ul>
+                        <li class="slide4 active4">
+                            <img src="./img/Hébergments/logis01.jpg" alt="img hébergement1">
+                        </li>
+                        <li class="slide4">
+                            <img src="./img/Hébergments/logis02.jpg" alt="img hébergement2">
+                        </li>
+                        <li class="slide4">
+                            <img src="./img/Hébergments/logis03.jpg" alt="img hébergement 3">
+                        </li>
+                    </ul>
+                </div>
                 <div class="text-logement">
                     <h4>trésors perchés</h4>
                     <p>Plongez dans une expérience de camping immersive au cœur de la nature, avec nos tentes insolites nichées dans des forêts vierges. Éveillez-vous chaque matin revitalisé, prêt à explorer les merveilles naturelles qui vous entourent.</p>

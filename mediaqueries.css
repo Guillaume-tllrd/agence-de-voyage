@@ -1,0 +1,138 @@
+@media screen and (max-width:1058px) {
+    header nav {
+        display: flex;
+      }
+    
+    header nav .nav-right {
+        width: 100%;
+    }
+
+    /* -----------SECTION2---------------- */
+    #section2 .card{
+        height: 320px;
+        width: 256px;
+    }
+    #section2 .info{
+        height: 320px;
+        width: 256px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--white1);
+        position: relative;
+        background-color: #000000b9;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:891px) {
+    /* -----header----- */
+    header .header-content h1 {
+        font-size: 3rem;
+    }
+    #section2 .card{
+        height: 256px;
+        width: 205px;
+    }
+    #section2 .info{
+        height: 256px;
+        width: 205px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--white1);
+        position: relative;
+        background-color: #000000b9;
+        opacity: 0;
+    }
+    /* ------Section3--------- */
+    #section3 .text-logement button{
+        margin: 10px auto 0;
+    }
+}
+
+@media screen and (max-width:735px) {
+
+    /* -------header------ */
+    #icons {
+        display: block;
+    }
+    .active #icons:before {
+        content: "\2715";
+        /* la croix  */
+    }
+    #icons::before{
+        content: "\2630";
+        /* burger menu  */
+    }
+    header nav ul {
+        position: absolute;
+        left: -100%;
+        top: 8%;
+        flex-direction: column;
+        background: var(--black1);
+        width: 100%;
+        align-items: center;
+    }
+    nav li {
+        padding: 3px 0;
+    }
+    nav.active ul {
+        left:0;
+    }
+    /* ------section1------ */
+    .first-article {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .second-article {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .img-article2{
+        display: none;
+    }
+    
+
+    /* --------SECTION 2 -------- */
+    #section2 .card{
+        height: 400px;
+        width: 320px;
+        margin-bottom: 20px;
+    }
+    #section2 .info{
+        height: 400px;
+        width: 320px;
+    }
+    .row1-img{
+        display: block;
+        margin: 0 auto;
+    }
+    .row2-img{
+        display: block;
+    }
+    .row1-img::after{
+        display: none;
+    }
+    .row2-img::after{
+        display: none;
+    }
+    #section2 h1::before {
+        display: none;
+    }
+    #section2 h1::after{
+        display: none;
+    }
+    
+    /* ------Section3--------- */
+    #section3 .text-logement button{
+        margin: 0 auto ;
+    }
+
+    /* -----------SECTION4------ */
+    #section4 .background-container{
+        width: 100%;
+    }
+}
