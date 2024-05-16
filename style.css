@@ -433,7 +433,24 @@ article {
 #section2 .carte-infos-vtt img {
     height: 200px;
 }
-
+#section2 .btn-carte {
+    display: block;
+    margin:0 auto;
+    text-transform: uppercase;
+    border: none;
+    padding: 20px;
+    background-color: var(--gold);
+    color: var(--white1);
+    border-radius: 50px; 
+    cursor: pointer;
+}
+#section2 .btn-carte:hover{
+    cursor: pointer;
+    background-color: rgb(194, 128, 69);
+}
+#section2 a{
+    text-decoration: none;
+}
 #section3 {
     padding-bottom: 115px;
 }
