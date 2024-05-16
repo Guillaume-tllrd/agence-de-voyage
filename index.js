@@ -1,9 +1,10 @@
 // -------------NAVBAR------
-const nav = document.querySelector(".nav");
+const nav = document.querySelector("nav");
 const icons= document.getElementById("icons");
 icons.addEventListener("click", () => {
     nav.classList.toggle("active");
-  });
+});
+
 
 //-------------------Sport carte-------------------
 // Base jump
@@ -16,7 +17,8 @@ baseJumpInfo.addEventListener("click", () => {
 })
 document.addEventListener("click", (event) => {
     if (!baseJumpInfo.contains(event.target)) {
-        carteInfosBaseJump.style.opacity = "0"
+        carteInfosBaseJump.style.opacity = "0";
+        carteInfosBaseJump.style.zIndex = "-1";
     }
 });
 
@@ -30,7 +32,8 @@ parapenteInfo.addEventListener("click", () => {
 })
 document.addEventListener("click", (event) => {
     if (!parapenteInfo.contains(event.target)) {
-        carteInfosParapente.style.opacity = "0"
+        carteInfosParapente.style.opacity = "0";
+        carteInfosParapente.style.zIndex = "-1";
     }
 });
 
@@ -44,7 +47,8 @@ sautElastiqueInfo.addEventListener("click", () => {
 })
 document.addEventListener("click", (event) => {
     if (!sautElastiqueInfo.contains(event.target)) {
-        carteInfosSaut.style.opacity = "0"
+        carteInfosSaut.style.opacity = "0";
+        carteInfosSaut.style.zIndex = "-1";
     }
 });
 
@@ -58,7 +62,8 @@ raftingInfo.addEventListener("click", () => {
 })
 document.addEventListener("click", (event) => {
     if (!raftingInfo.contains(event.target)) {
-        carteInfosRafting.style.opacity = "0"
+        carteInfosRafting.style.opacity = "0";
+        carteInfosRafting.style.zIndex = "-1";
     }
 });
 
@@ -72,7 +77,8 @@ escaladeInfo.addEventListener("click", () => {
 })
 document.addEventListener("click", (event) => {
     if (!escaladeInfo.contains(event.target)) {
-        carteInfosEscalade.style.opacity = "0"
+        carteInfosEscalade.style.opacity = "0";
+        carteInfosEscalade.style.zIndex = "-1";
     }
 });
 
@@ -86,7 +92,8 @@ vttInfo.addEventListener("click", () => {
 })
 document.addEventListener("click", (event) => {
     if (!vttInfo.contains(event.target)) {
-        carteInfosVtt.style.opacity = "0"
+        carteInfosVtt.style.opacity = "0";
+        carteInfosVtt.style.zIndex = "-1";
     }
 });
 
