@@ -88,21 +88,41 @@ header nav .nav-right li {
 header nav .nav-right li:hover {
     cursor: pointer;
 }
-#search {
+.search-barre {
+    display: flex;
     position: absolute;
     top: 10%;
     right: 10%;
+}
+#search {
+    text-align: center;
     border: none;
     background: rgba(207, 203, 203, 0.445);
     height: 50px;  
-    width: 300px;
+    width: 280px;
     border-radius: 10px;
     color: var(--white1);
+}
+.search-barre button {
+    background: rgba(207, 203, 203, 0.445);
+    height: 50px;  
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: var(--white1);
+}
+.search-barre button:hover{
+    background: var(--white1);
+    color: var(--black2);
 }
 #search::placeholder{
     color: var(--white1);
 }
-
+#search:focus{
+    border-bottom: 3px solid var(--white1);
+    
+}
 header .header-content {
     display: flex;
     position: relative;
@@ -708,35 +728,83 @@ article {
     z-index: 2;
 }
 #section4 #card1-comment:before{
+    content: "";
     position: absolute;
-    z-index: 3;
-    background:url(./img/photo01.jpg\ copy.jpg);
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background:url(./img/photo01.jpg\ copy.jpg) center/cover;
 }
 #section4 #card2-comment{
     position: absolute;
     right: 0%;
     top: 25%;
 }
-
+#section4 #card2-comment:before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background:url(./img/photo02.jpgcopy.jpg) center/cover;
+}
 
 #section4 #card3-comment{
     position: absolute;
     left: 0%;
     top: 45%;
 }
+#section4 #card3-comment:before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background:url(./img/photo03.jpgcopy.jpg) center/cover;
+}
+
 
 #section4 #card4-comment{
     position: absolute;
     right: 0%;
     top: 65%;
 }
-
+#section4 #card4-comment:before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background:url(./img/photo04.pngcopy.png) center/cover;
+}
 #section4 #card5-comment{
     position: absolute;
     left: 0%;
     top: 85%;
 }
-
+#section4 #card5-comment:before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background:url(./img/photo05.jpgcopy.jpg) center/cover;
+}
 
 #section5 .booking-form {
     display: flex;

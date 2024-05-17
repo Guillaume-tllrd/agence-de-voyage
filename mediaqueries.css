@@ -82,6 +82,12 @@
     nav.active ul {
         left:0;
     }
+    .search-barre {
+        position: relative;
+        right: auto;
+        top: auto;
+        border: none;
+    }
     /* ------section1------ */
     .first-article {
         display: grid;
@@ -134,5 +140,16 @@
     /* -----------SECTION4------ */
     #section4 .background-container{
         width: 100%;
+    }
+}
+@media screen and (max-width:624px) {
+    #search {
+        text-align: center;
+        border: none;
+        background: rgba(207, 203, 203, 0.445);
+        height: 50px;  
+        width: 280px;
+        border-radius: 10px;
+        color: var(--white1);
     }
 }
